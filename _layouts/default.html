@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0f">
+  
+  {%- seo -%}
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  
+  {%- feed_meta -%}
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}" class="logo" aria-label="SwarmAITech Home">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+              <defs>
+                <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#00ff88"/>
+                  <stop offset="100%" style="stop-color:#00d4ff"/>
+                </linearGradient>
+              </defs>
+              <circle cx="16" cy="16" r="14" fill="none" stroke="url(#logo-grad)" stroke-width="2"/>
+              <circle cx="10" cy="12" r="3" fill="#00ff88"/>
+              <circle cx="22" cy="12" r="3" fill="#00d4ff"/>
+              <circle cx="16" cy="22" r="3" fill="#fff"/>
+              <line x1="10" y1="12" x2="22" y2="12" stroke="#333" stroke-width="1"/>
+              <line x1="10" y1="12" x2="16" y2="22" stroke="#333" stroke-width="1"/>
+              <line x1="22" y1="12" x2="16" y2="22" stroke="#333" stroke-width="1"/>
+            </svg>
+          </span>
+          <span class="logo-text">SwarmAI<span class="logo-text-accent">Tech</span></span>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="{{ '/frameworks/' | relative_url }}" {% if page.url contains '/frameworks' %}aria-current="page"{% endif %}>Frameworks</a></li>
+          <li><a href="{{ '/comparison/' | relative_url }}" {% if page.url == '/comparison/' %}aria-current="page"{% endif %}>Comparison</a></li>
+          <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <a href="{{ site.github.repository_url }}" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+        
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/frameworks/' | relative_url }}">Frameworks</a></li>
+      <li><a href="{{ '/comparison/' | relative_url }}">Comparison</a></li>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ site.github.repository_url }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+  
+  <!-- Main Content -->
+  <main id="main-content" class="main-content">
+    {{ content }}
+  </main>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="{{ '/' | relative_url }}" class="footer-logo">
+            <span class="logo-icon">
+              <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                <circle cx="16" cy="16" r="14" fill="none" stroke="url(#logo-grad)" stroke-width="2"/>
+                <circle cx="10" cy="12" r="3" fill="#00ff88"/>
+                <circle cx="22" cy="12" r="3" fill="#00d4ff"/>
+                <circle cx="16" cy="22" r="3" fill="#fff"/>
+              </svg>
+            </span>
+            SwarmAITech
+          </a>
+          <p class="footer-tagline">Exploring the future of multi-agent AI systems</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="{{ '/frameworks/' | relative_url }}">Frameworks</a></li>
+            <li><a href="{{ '/comparison/' | relative_url }}">Comparison</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="{{ site.github.repository_url }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="{{ site.github.repository_url }}/discussions" target="_blank" rel="noopener noreferrer">Discussions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; {{ 'now' | date: "%Y" }} SwarmAITech. Built with Jekyll. Hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      
+      toggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        menu.setAttribute('aria-hidden', expanded);
+      });
+    });
+  </script>
+</body>
+</html>

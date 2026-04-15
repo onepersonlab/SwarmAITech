@@ -1,0 +1,75 @@
+# SwarmAITech - Multi-Agent Framework Portal
+# GitHub Pages Jekyll Configuration
+
+title: SwarmAITech
+description: "Explore the cutting-edge of multi-agent AI frameworks. Compare, analyze, and discover the best tools for building intelligent agent systems."
+author: SwarmAITech Team
+email: contact@swarmaitech.dev
+
+# Site settings
+url: "https://onepersonlab.github.io"
+baseurl: "/SwarmAITech"
+lang: en-US
+
+# GitHub Pages specific
+github:
+  repository_url: "https://github.com/onepersonlab/SwarmAITech"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Collections
+collections:
+  frameworks:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "frameworks"
+    values:
+      layout: "framework"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+
+# Include in processing
+include:
+  - _pages
+
+# Timezone
+timezone: UTC
+
+# Pagination (if needed)
+# paginate: 10
+# paginate_path: "/blog/page:num/"

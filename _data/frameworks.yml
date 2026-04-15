@@ -1,0 +1,264 @@
+# Frameworks data for Jekyll templates
+# Source: Phase 1 data collection (st-01)
+
+frameworks:
+  - name: OpenClaw
+    slug: openclaw
+    github_url: https://github.com/openclaw/openclaw
+    stars: 357447
+    forks: 72595
+    language: TypeScript
+    description: "Your own personal AI assistant. Any OS. Any Platform. The lobster way."
+    topics:
+      - ai
+      - assistant
+      - crustacean
+      - molty
+      - openclaw
+      - own-your-data
+      - personal
+    license: MIT
+    key_features:
+      - Personal AI assistant
+      - Cross-platform support
+      - Data ownership
+      - Multi-model integration
+
+  - name: AutoGPT
+    slug: autogpt
+    github_url: https://github.com/Significant-Gravitas/AutoGPT
+    stars: 183000
+    forks: 46200
+    language: Python
+    description: "AutoGPT is the vision of accessible AI for everyone, to use and to build on."
+    topics:
+      - python
+      - ai
+      - agents
+      - autonomous-agents
+      - llm
+      - agentic-ai
+    license: MIT
+    key_features:
+      - Autonomous task execution
+      - Self-prompting capabilities
+      - Plugin architecture
+      - Memory management
+
+  - name: Hermes Agent
+    slug: hermes-agent
+    github_url: https://github.com/NousResearch/hermes-agent
+    stars: 84934
+    forks: 11491
+    language: Python
+    description: "The agent that grows with you. Self-improving multi-model agent."
+    topics:
+      - ai
+      - ai-agent
+      - ai-agents
+      - anthropic
+      - chatgpt
+      - claude
+      - claude-code
+      - hermes
+      - llm
+      - openai
+      - openclaw
+    license: MIT
+    key_features:
+      - Self-improving agent
+      - Multi-model support
+      - OpenClaw ecosystem
+      - Adaptive learning
+
+  - name: autoresearch
+    slug: autoresearch
+    github_url: https://github.com/karpathy/autoresearch
+    stars: 72311
+    forks: 10553
+    language: Python
+    description: "AI agents running research on single-GPU nanochat training automatically"
+    topics: []
+    license: None
+    key_features:
+      - AI research automation
+      - Single-GPU training
+      - Nanochat
+      - Autonomous research
+
+  - name: deer-flow
+    slug: deer-flow
+    github_url: https://github.com/bytedance/deer-flow
+    stars: 61544
+    forks: 7915
+    language: Python
+    description: "An open-source long-horizon SuperAgent harness that researches, codes, and creates."
+    topics:
+      - agent
+      - agentic
+      - agentic-framework
+      - ai
+      - ai-agents
+      - deep-research
+      - langchain
+      - langgraph
+      - multi-agent
+      - superagent
+    license: MIT
+    key_features:
+      - Long-horizon SuperAgent
+      - Research & code automation
+      - Multi-tool integration
+      - Sandbox environment
+
+  - name: MetaGPT
+    slug: metagpt
+    github_url: https://github.com/geekan/MetaGPT
+    stars: 67100
+    forks: 8500
+    language: Python
+    description: "The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming"
+    topics:
+      - agent
+      - multi-agent
+      - gpt
+      - llm
+      - metagpt
+    license: MIT
+    key_features:
+      - Multi-agent framework
+      - Software company simulation
+      - Role-based agents
+      - Natural language programming
+
+  - name: AutoGen
+    slug: autogen
+    github_url: https://github.com/microsoft/autogen
+    stars: 57100
+    forks: 8600
+    language: Python
+    description: "A programming framework for agentic AI"
+    topics:
+      - framework
+      - ai
+      - agents
+      - autogen
+      - chatgpt
+      - llm-agent
+      - agentic
+    license: MIT
+    key_features:
+      - Multi-agent conversation
+      - Microsoft Research
+      - Code execution
+      - Human-in-the-loop
+
+  - name: CrewAI
+    slug: crewai
+    github_url: https://github.com/crewAIInc/crewAI
+    stars: 48900
+    forks: 6700
+    language: Python
+    description: "Framework for orchestrating role-playing, autonomous AI agents."
+    topics:
+      - ai
+      - agents
+      - ai-agents
+      - llms
+      - aiagentframework
+    license: MIT
+    key_features:
+      - Role-playing agents
+      - Collaborative intelligence
+      - Task orchestration
+      - Crew-based workflows
+
+  - name: LangGraph
+    slug: langgraph
+    github_url: https://github.com/langchain-ai/langgraph
+    stars: 29200
+    forks: 5000
+    language: Python
+    description: "Build resilient language agents as graphs."
+    topics:
+      - python
+      - framework
+      - ai
+      - agents
+      - langchain
+      - langgraph
+    license: MIT
+    key_features:
+      - Graph-based agents
+      - State management
+      - LangChain integration
+      - Cycle support
+
+  - name: Swarm
+    slug: swarm
+    github_url: https://github.com/openai/swarm
+    stars: 21300
+    forks: 2300
+    language: Python
+    description: "Educational framework exploring ergonomic, lightweight multi-agent orchestration."
+    topics: []
+    license: MIT
+    key_features:
+      - Lightweight orchestration
+      - OpenAI educational
+      - Handoff patterns
+      - Simple architecture
+
+  - name: AutoResearchClaw
+    slug: autoresearchclaw
+    github_url: https://github.com/aiming-lab/AutoResearchClaw
+    stars: 11155
+    forks: 1282
+    language: Python
+    description: "Fully autonomous & self-evolving research from idea to paper."
+    topics:
+      - autonomous-research
+      - citation-verification
+      - llm-agents
+      - metaclaw
+      - multi-agent-debate
+      - openclaw
+      - paper-generation
+    license: MIT
+    key_features:
+      - Autonomous research
+      - Paper generation
+      - Self-evolving
+      - Citation verification
+
+  - name: AI-Scientist-v2
+    slug: ai-scientist-v2
+    github_url: https://github.com/SakanaAI/AI-Scientist-v2
+    stars: 5503
+    forks: 767
+    language: Python
+    description: "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
+    topics: []
+    license: Apache-2.0
+    key_features:
+      - Automated scientific discovery
+      - Agentic tree search
+      - Workshop-level automation
+      - Paper writing
+
+  - name: HiClaw
+    slug: hiclaw
+    github_url: https://github.com/agentscope-ai/HiClaw
+    stars: 4099
+    forks: 467
+    language: Shell
+    description: "An open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms."
+    topics:
+      - agent-teams
+      - openclaw
+    license: Apache-2.0
+    key_features:
+      - Collaborative Multi-Agent OS
+      - Human-in-the-loop
+      - Matrix communication
+      - Task coordination
